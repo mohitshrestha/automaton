@@ -1,2 +1,5 @@
-YEAR: 2022
-COPYRIGHT HOLDER: Mohit Shrestha, MSBA
+# LICENSE 
+
+YEAR: <strong>`2022`</strong>
+
+COPYRIGHT HOLDER: <strong>`Mohit Shrestha, MSBA`</strong>
