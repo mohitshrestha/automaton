@@ -1,0 +1,22 @@
+Package: automaton
+Type: Package
+Title: Task Automation Tools/Scripts Built in R
+Version: 0.0.1
+Authors@R: c(
+    person("Mohit", "Shrestha", email = "mohitshrestha@gmail.com", role = c("aut", "cre")),
+    person("Mohit Shrestha", role = "cph"))
+Maintainer: Mohit Shrestha <mohitshrestha@gmail.com>
+Description: Task Automation Tools/Scripts Build in R
+    - Contains useful R functions for automation.
+License: MIT + file LICENSE
+URL: https://mohitshrestha.github.io/automaton/
+BugReports: https://github.com/mohitshrestha/automaton/issues
+Imports: 
+    dplyr (>= 1.0.9)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
