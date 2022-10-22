@@ -134,6 +134,16 @@ scale_color_ms_c <- scale_colour_ms_c
 
 ## Below is the code for custom brand theme: `theme_ms`
 
+#' Title
+#'
+#' @param base_size
+#' @param base_family
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 theme_ms <- function(base_size = 12, base_family = "roboto_condensed", ...) {
     half_line <- base_size/2
 
