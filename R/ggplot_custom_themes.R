@@ -20,6 +20,14 @@ ms_brand_colours <- c(
 )
 
 # First, start by defining the various colors we need.
+#' Title
+#'
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 ms_brand_colour <- function(...) {
 
     ms_brand_colours <- ms_brand_colours
@@ -39,6 +47,15 @@ ms_brand_color <- ms_brand_colour
 ## That `ms_brand_color` function then becomes the base of the `ms_brand_palette` function below, where those defined colors are combined into palettes.
 ## Your organization might have primary and secondary palettes, or palettes designed for specific uses,
 ## but here we’ll define a `main` palette as well as a `highlight` palette for when we want just two colors.
+#' Title
+#'
+#' @param palette
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 ms_brand_palette <- function(palette = "main", ...) {
 
     ms_brand_palettes <- list(
@@ -63,6 +80,14 @@ ms_brand_palette <- function(palette = "main", ...) {
 ## (The `n` there refers to the number of colors that would be needed for a particular plot.)
 palette_gen <- function(palette = "main", direction = 1) {
 
+#' Title
+#'
+#' @param n
+#'
+#' @return
+#' @export
+#'
+#' @examples
     function(n) {
 
         if (n > length(ms_brand_palette(palette)))
@@ -85,6 +110,16 @@ palette_gen <- function(palette = "main", direction = 1) {
 ## The function above is for discrete color scales.
 ## If you also want to use continuous color scales, the function below uses the existing `colorRampPalette` function
 ## to interpolate the necessary colors between the ones you have chosen in your palette.
+#' Title
+#'
+#' @param palette
+#' @param direction
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 palette_gen_c <- function(palette = "main", direction = 1, ...) {
 
     pal <- ms_brand_palette(palette)
@@ -97,6 +132,16 @@ palette_gen_c <- function(palette = "main", direction = 1, ...) {
 
 ## With that helper function created, you can write the actual functions to be used with `ggplot2`.
 ## I’ve called mine `scale_fill_ms`, which takes the same two arguments as before: `palette` and `direction`.
+#' Title
+#'
+#' @param palette
+#' @param direction
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 scale_fill_ms <- function(palette = "main", direction = 1, ...) {
 
     ggplot2::discrete_scale(
@@ -109,6 +154,16 @@ scale_fill_ms <- function(palette = "main", direction = 1, ...) {
 ## You can use the same syntax for `scale_color`.
 ## Fun fact: `ggplot2` convention is to create a `scale_colour` function and then replicate it as `scale_color`.
 ### For `discrete` color scales
+#' Title
+#'
+#' @param palette
+#' @param direction
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 scale_colour_ms <- function(palette = "main", direction = 1, ...) {
 
     ggplot2::discrete_scale(
@@ -121,6 +176,16 @@ scale_colour_ms <- function(palette = "main", direction = 1, ...) {
 scale_color_ms <- scale_colour_ms
 
 ### For `continuous` color scales
+#' Title
+#'
+#' @param palette
+#' @param direction
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 scale_colour_ms_c <- function(palette = "main", direction = 1, ...) {
 
     pal <- palette_gen_c(palette = palette, direction = direction)
