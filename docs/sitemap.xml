@@ -21,4 +21,28 @@
   <url>
     <loc>/reference/index.html</loc>
   </url>
+  <url>
+    <loc>/reference/ms_brand_colour.html</loc>
+  </url>
+  <url>
+    <loc>/reference/ms_brand_palette.html</loc>
+  </url>
+  <url>
+    <loc>/reference/palette_gen.html</loc>
+  </url>
+  <url>
+    <loc>/reference/palette_gen_c.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_ms.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_ms_c.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_ms.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_ms.html</loc>
+  </url>
 </urlset>
