@@ -1,7 +1,7 @@
 Package: automaton
 Type: Package
 Title: Task Automation Tools/Scripts Built in R
-Version: 0.0.2
+Version: 0.0.1
 Authors@R: c(
     person("Mohit", "Shrestha", email = "mohitshrestha@gmail.com", role = c("aut", "cre")),
     person("Mohit Shrestha", role = "cph"))

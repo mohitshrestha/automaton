@@ -8,7 +8,7 @@ test_df <- generate_df(
     dplyr::summarise(
         mean = mean(values), # mean is approx mean
         sd = sd(values),     # sd is approx sd
-        n = n(),             # each grp is of length n
+        n = dplyr::n(),             # each grp is of length n
         # showing that the sd default of mean/10 works
         `mean/sd` = round(mean / sd, 1)
     )
