@@ -21,4 +21,10 @@
   <url>
     <loc>/reference/index.html</loc>
   </url>
+  <url>
+    <loc>/reference/penguins.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_ms.html</loc>
+  </url>
 </urlset>
