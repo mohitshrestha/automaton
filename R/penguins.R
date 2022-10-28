@@ -1,4 +1,10 @@
-
+#' The goal of palmerpenguins is to provide a great dataset for data exploration & visualization, as an alternative to iris.
+#'
+#' About the data:
+#' Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+#' The palmerpenguins package contains two datasets.
+#' - One is called penguins, and is a simplified version of the raw data; see ?penguins for more info:
+#'
 #' Size measurements for adult foraging penguins near Palmer Station, Antarctica
 #'
 #' Includes measurements for penguin species, island in Palmer Archipelago,

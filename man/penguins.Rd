@@ -3,7 +3,7 @@
 \docType{data}
 \name{penguins}
 \alias{penguins}
-\title{Size measurements for adult foraging penguins near Palmer Station, Antarctica}
+\title{The goal of palmerpenguins is to provide a great dataset for data exploration & visualization, as an alternative to iris.}
 \format{
 A tibble with 344 rows and 8 variables:
 \describe{
@@ -30,6 +30,16 @@ A tibble with 344 rows and 8 variables:
 penguins
 }
 \description{
+About the data:
+Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+The palmerpenguins package contains two datasets.
+\itemize{
+\item One is called penguins, and is a simplified version of the raw data; see ?penguins for more info:
+}
+}
+\details{
+Size measurements for adult foraging penguins near Palmer Station, Antarctica
+
 Includes measurements for penguin species, island in Palmer Archipelago,
 size (flipper length, body mass, bill dimensions), and sex.
 This is a subset of \code{\link{penguins_raw}}.
