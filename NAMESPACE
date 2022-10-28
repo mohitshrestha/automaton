@@ -2,3 +2,4 @@
 
 export(generate_df)
 export(theme_ms)
+export(theme_ms_dark)
