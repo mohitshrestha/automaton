@@ -34,7 +34,7 @@ About the data:
 Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
 The palmerpenguins package contains two datasets.
 \itemize{
-\item One is called penguins, and is a simplified version of the raw data; see ?penguins for more info:
+\item One is called penguins, and is a simplified version of the raw data; see ?penguins for more info.
 }
 }
 \details{
