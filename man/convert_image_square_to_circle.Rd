@@ -2,13 +2,16 @@
 % Please edit documentation in R/convert_image_square_to_circle.R
 \name{convert_image_square_to_circle}
 \alias{convert_image_square_to_circle}
-\title{Title}
+\title{Function to convert square image with circle mask}
 \usage{
-convert_image_square_to_circle(image_path)
+convert_image_square_to_circle(image_path, bg_color = "white")
 }
 \arguments{
-\item{image_url}{}
+\item{bg_color}{}
 }
 \description{
-Title
+Function to convert square image with circle mask
+}
+\examples{
+convert_image_square_to_circle(image_path = "https://media-exp1.licdn.com/dms/image/C5103AQFH0b7BkENK1A/profile-displayphoto-shrink_800_800/0/1557701878024?e=1672272000&v=beta&t=YHCrjTU6McxfctCdD0-rZGJ3GNRhJ2WVLW3cCbB7tdg", bg_color = "white")
 }

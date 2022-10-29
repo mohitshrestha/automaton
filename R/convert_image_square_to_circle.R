@@ -1,12 +1,14 @@
-#' Title
+#' Function to convert square image with circle mask
 #'
-#' @param image_url
+#' @param image_path
+#' @param bg_color
 #'
 #' @return
 #' @export
 #'
 #' @examples
-convert_image_square_to_circle <- function(image_path){
+#' convert_image_square_to_circle(image_path = "https://media-exp1.licdn.com/dms/image/C5103AQFH0b7BkENK1A/profile-displayphoto-shrink_800_800/0/1557701878024?e=1672272000&v=beta&t=YHCrjTU6McxfctCdD0-rZGJ3GNRhJ2WVLW3cCbB7tdg", bg_color = "white")
+convert_image_square_to_circle <- function(image_path, bg_color = "white"){
 
     library(magick)
     im <- magick::image_read(image_path)
@@ -25,6 +27,6 @@ convert_image_square_to_circle <- function(image_path){
     im2 <- magick::image_composite(im1, fig, operator='copyopacity')
 
     # set background as white
-    magick::image_background(im2, "white")
+    magick::image_background(im2, bg_color)
 
 }
