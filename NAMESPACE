@@ -2,6 +2,7 @@
 
 export(convert_image_square_to_circle)
 export(generate_df)
+export(gt_theme_ms)
 export(insert_dashes)
 export(launch_rstudio)
 export(theme_ms)
