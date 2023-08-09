@@ -1,0 +1,18 @@
+---
+title: "write your own R package and publish it on CRAN"
+author: "Mohit Shrestha"
+format: html
+editor: visual
+---
+
+## Load R Packages
+
+```{r}
+library(roxygen2) # In-Line Documentation for R 
+library(devtools) # Tools to Make Developing R Packages Easier
+library(testthat) # Unit Testing for R
+library(usethis)  # Automate Package and Project Setup
+library(available) # Check if the Title of a Package is Available
+# Check whether it's available
+available::available("automaton", browse = FALSE)
+```
