@@ -63,7 +63,17 @@
 <div class="page-header"><h1 id="automaton">automaton<a class="anchor" aria-label="anchor" href="#automaton"></a>
 </h1></div>
 <p>Task Automation Tools/Scripts Built in R</p>
+<div class="section level2">
+<h2 id="installing-from-github">Installing from GitHub<a class="anchor" aria-label="anchor" href="#installing-from-github"></a>
+</h2>
+<p>While CRAN is still by far the most popular repository for R packages, you will find quite a lot of packages that are only available from <a href="https://github.com/" class="external-link">GitHub</a>. Furthermore, if you’d liked to try out the latest development versions of the <a href="https://mohitshrestha.github.io/automaton/">automaton</a> package you will have to install them from GitHub.</p>
+<p>Before you can install any package from GitHub, you need to install the <a href="https://remotes.r-lib.org" class="external-link">remotes</a> package from CRAN.</p>
+<pre><code><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span></code></pre>
+<p>Now you can install any package from GitHub by providing <code>"username/repository"</code> as argument to <code>remotes::install_github()</code>. For example, to install the latest development version of {automaton} from GitHub run this command.</p>
+<pre><code><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mohitshrestha/automaton"</span><span class="op">)</span></span></code></pre>
+<p>Please note that installing a package from GitHub means that you have to install it from source. This requires a proper development environment including (at the minimum) a C and FORTRAN compiler. On Linux and macOS that’s a given but on Windows it’s not. More on that below where I discuss the difference between installing binaries vs. installing from source.</p>
 <p>Copyright (c) 2022 <strong><code>Mohit Shrestha, MSBA</code></strong></p>
+</div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
