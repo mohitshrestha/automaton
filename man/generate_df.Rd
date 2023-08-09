@@ -44,4 +44,8 @@ generate_df(
     `mean/sd` = round(mean / sd, 1)
   )
 }
+\seealso{
+Other Utilities: 
+\code{\link{gt_theme_ms}()}
+}
 \concept{Utilities}

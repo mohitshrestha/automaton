@@ -9,3 +9,38 @@ gt_theme_ms(gt_tbl)
 \description{
 Customize Table Theme with the gt Package.
 }
+\examples{
+library(automaton)
+library(tidyverse)
+library(gt)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Assign penguins data set to tbl data frame 'tbl'
+tbl <- penguins
+
+# Convert data frame to gt table format
+gt_table <- tbl |> gt()
+
+# Apply customized gt theme
+gt_table |> gt_theme_ms()
+}
+=======
+=======
+>>>>>>> 3771dc7000c54237e34c99c812a36266aa80d7e6
+Assign penguins data set to tbl data frame 'tbl'
+tbl <- penguins
+# Convert data frame to gt table format
+gt_table <- tbl |> gt()
+# Apply customized gt theme
+gt_table |> gt_theme_ms()
+}
+\seealso{
+Other Utilities: 
+\code{\link{generate_df}()}
+}
+\concept{Utilities}
+<<<<<<< HEAD
+>>>>>>> 3771dc7000c54237e34c99c812a36266aa80d7e6
+=======
+>>>>>>> 3771dc7000c54237e34c99c812a36266aa80d7e6
