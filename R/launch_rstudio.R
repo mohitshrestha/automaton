@@ -8,6 +8,6 @@
 launch_rstudio <- function(){
 
     # rstudioapi::terminalExecute("open -n /Applications/RStudio.app", show = FALSE)
-    rstudioapi::terminalExecute("open -n 'Program Files/RStudio/rstudio.exe'", show = FALSE)
+    rstudioapi::terminalExecute("open 'Program Files/RStudio/rstudio.exe'", show = FALSE)
 
 }
