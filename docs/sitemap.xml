@@ -25,6 +25,12 @@
     <loc>/reference/index.html</loc>
   </url>
   <url>
+    <loc>/reference/insert_dashes.html</loc>
+  </url>
+  <url>
+    <loc>/reference/launch_rstudio.html</loc>
+  </url>
+  <url>
     <loc>/reference/penguins.html</loc>
   </url>
   <url>
@@ -32,5 +38,14 @@
   </url>
   <url>
     <loc>/reference/theme_ms_dark.html</loc>
+  </url>
+  <url>
+    <loc>/reference/use_daytime_theme.html</loc>
+  </url>
+  <url>
+    <loc>/reference/use_nighttime_theme.html</loc>
+  </url>
+  <url>
+    <loc>/reference/use_teach_mode.html</loc>
   </url>
 </urlset>
