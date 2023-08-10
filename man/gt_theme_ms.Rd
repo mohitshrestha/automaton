@@ -4,10 +4,10 @@
 \alias{gt_theme_ms}
 \title{Customize GT table}
 \usage{
-gt_theme_ms(gt_tbl = gt(automaton::penguins))
+gt_theme_ms(data = automaton::penguins)
 }
 \arguments{
-\item{gt_tbl}{Input GT table not just data frame. Convert data frame/tibble to GT table first then input that gt table}
+\item{gt_tbl}{Input GT table not just data frame. First convert data frame/tibble to GT table then input that gt table to the function}
 }
 \value{
 Returns the gt table using the customized theme
@@ -19,7 +19,9 @@ Customize Table Theme with the gt Package.
 library(automaton)
 library(gt)
 tbl <- automaton::penguins
-gt_tbl <- tbl |> gt()
+gt_tbl <- tbl |>
+            dplyr::count(species) |>
+            gt::gt()
 
 gt_tbl |> gt_theme_ms()
 }
