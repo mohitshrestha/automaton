@@ -2,10 +2,24 @@
 % Please edit documentation in R/gt_custom_themes.R
 \name{gt_theme_ms}
 \alias{gt_theme_ms}
-\title{Use Custom GT theme.}
+\title{Customize GT table}
 \usage{
-gt_theme_ms(gt_tbl)
+gt_theme_ms(gt_tbl = gt(automaton::penguins))
+}
+\arguments{
+\item{gt_tbl}{Input GT table not just data frame. Convert data frame/tibble to GT table first then input that gt table}
+}
+\value{
+Returns the gt table using the customized theme
 }
 \description{
 Customize Table Theme with the gt Package.
+}
+\examples{
+library(automaton)
+library(gt)
+tbl <- automaton::penguins
+gt_tbl <- tbl |> gt()
+
+gt_tbl |> gt_theme_ms()
 }
