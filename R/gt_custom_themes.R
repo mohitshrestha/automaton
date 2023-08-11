@@ -47,7 +47,7 @@ gt_theme_ms <- function(data = automaton::penguins) {
             locations = gt::cells_title(groups = 'title')
         ) |>
         gt::tab_style(
-            style = gt::cell_fill(color = 'grey90'),
+            style = gt::cell_fill(color = 'lightgrey'),
             # Use number of rows from data set
             locations = gt::cells_body(rows = seq(1, n_rows, 2))
         )
